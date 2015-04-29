@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/tooltip.js"></script>
+    <script>
+        $(function(){
+            $('#myform').tooltip();
+        });
+    </script>
+</head>
+<body>
+<div id="tooltip_container">
+    <div id="tooltip_text"></div>
+    <div id="tooltip_triangle"></div>
+</div>
+<h3>Simple Forms Input Tooltip </h3>
+<br>
+<br>
+<form id="myform">
+    <div>
+        <label> Foo </label>
+        <input type="text" name="foo" class="frm-input" data-tip="A Simple JQuery forms input Tool tip Plugin" />
+    </div>
+    <br/>
+    <div>
+        <label> Bar </label>
+        <select name="bar" class="frm-input" data-tip="Please select the bar you like.">
+            <option value=""></option>
+            <option value="bar1">Bar 1</option>
+            <option value="bar2">Bar 2</option>
+        </select>
+    </div>
+</form>
+</body>
+</html>
